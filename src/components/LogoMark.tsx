@@ -14,7 +14,7 @@ export function LogoMark({ compact = false }: LogoMarkProps) {
       />
       <div className="min-w-0">
         <p className="font-heading text-sm font-bold uppercase leading-none tracking-[0.06em] text-white md:text-base">
-          Leandro Holanda
+          Holanda
         </p>
         <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.2em] text-white/60 md:text-xs">
           Personal Nutri

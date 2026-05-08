@@ -10,8 +10,8 @@ const transformations = [
     resultClassName: "max-w-[9ch]",
     time: "16 semanas",
     outcome:
-      "Definição muscular visível, mais resistência e uma rotina com execução consistente.",
-    progress: "Alto controle de gordura corporal",
+      "Mais do que perder peso, o foco foi construir uma rotina que deixou de ser tentativa e virou constância.",
+    progress: "Perda de gordura com rotina sustentável",
     beforeMetric: "97 kg",
     afterMetric: "85 kg",
     beforeImage:
@@ -27,8 +27,8 @@ const transformations = [
     resultClassName: "max-w-[10ch]",
     time: "6 meses",
     outcome:
-      "Mais volume, postura forte e recuperação melhor com estratégia nutricional.",
-    progress: "Hipertrofia com consistência nutricional",
+      "Mais do que ganhar massa, o processo trouxe mais confiança, presença física e consistência na alimentação.",
+    progress: "Hipertrofia com alimentação alinhada",
     beforeMetric: "68 kg",
     afterMetric: "75 kg",
     beforeImage:
@@ -44,8 +44,8 @@ const transformations = [
     resultClassName: "max-w-[11ch] text-[clamp(2rem,4vw,3.1rem)]",
     time: "12 semanas",
     outcome:
-      "Mais explosão, disciplina alimentar e um físico mais atlético e responsivo.",
-    progress: "Corpo responsivo e mente alinhada",
+      "Mais do que definir o corpo, a meta foi transformar uma rotina irregular em disciplina que dá para sustentar.",
+    progress: "Condicionamento com rotina organizada",
     beforeMetric: "Rotina irregular",
     afterMetric: "Rotina estruturada",
     beforeImage:
@@ -64,9 +64,9 @@ export function TransformationSection() {
         <Reveal>
           <SectionHeading
             align="center"
-            description="Cada caso abaixo representa um processo acompanhado com leitura real de cenário, ajustes estratégicos e foco em resultado mensurável."
-            eyebrow="Evolução de alunos"
-            title="Antes e depois que deixam a transformação visível em cada etapa."
+            description="Os resultados abaixo mostram o que acontece quando treino, alimentação e acompanhamento finalmente trabalham na mesma direção."
+            eyebrow="Resultados reais"
+            title="Antes e depois com resultados reais de quem parou de tentar sozinho."
           />
         </Reveal>
 
@@ -142,18 +142,18 @@ export function TransformationSection() {
 
                 <div className="mt-5 flex justify-center">
                   <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/35 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">
-                    <Camera size={14} className="text-[#ff6a00]" />
+                    <Camera className="text-[#ff6a00]" size={14} />
                     antes e depois
                   </div>
                 </div>
 
                 <div className="mt-auto grid gap-3 pt-8">
                   <div className="flex items-start gap-3 rounded-[1.25rem] border border-white/8 bg-black/18 px-4 py-3 text-sm uppercase tracking-[0.14em] text-white/58">
-                    <Target size={16} className="mt-0.5 shrink-0 text-[#ff6a00]" />
+                    <Target className="mt-0.5 shrink-0 text-[#ff6a00]" size={16} />
                     {item.progress}
                   </div>
                   <div className="flex items-center gap-3 rounded-[1.25rem] border border-white/8 bg-black/18 px-4 py-3 text-sm uppercase tracking-[0.14em] text-white/58">
-                    <Timer size={16} className="shrink-0 text-[#ff6a00]" />
+                    <Timer className="shrink-0 text-[#ff6a00]" size={16} />
                     {item.time}
                   </div>
                 </div>

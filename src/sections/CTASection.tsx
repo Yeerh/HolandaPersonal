@@ -19,12 +19,13 @@ export function CTASection() {
               <PhoneCall size={24} />
             </div>
             <h2 className="mt-8 font-heading text-5xl font-bold uppercase leading-[0.92] tracking-[-0.04em] text-white md:text-7xl">
-              Pronto para
-              <span className="block text-[#ff6a00]">transformar sua vida?</span>
+              Seu treino não precisa
+              <span className="block text-[#ff6a00]">andar separado da sua alimentação.</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/70">
-              Me chama no WhatsApp e vamos montar uma estratégia clara para o seu objetivo,
-              com treino, nutrição e acompanhamento focados em evolução real.
+              Me chama no WhatsApp e vamos entender seu momento, seu objetivo e a sua
+              rotina para indicar o acompanhamento ideal com treino, nutrição e estratégia
+              no mesmo processo.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -35,7 +36,7 @@ export function CTASection() {
                 target="_blank"
               >
                 <MessageCircle size={16} />
-                Chamar no WhatsApp
+                Começar minha transformação
               </Button>
               <a
                 className="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/5 px-5 py-3 text-sm font-semibold tracking-[0.01em] text-white/80 transition hover:border-[#ff6a00]/30 hover:text-white"
@@ -48,8 +49,8 @@ export function CTASection() {
             </div>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/52">
-              Mensagem automática: “Olá, Holanda. Vi seu site e quero entender como
-              funciona seu acompanhamento de treino e nutrição.”
+              Mensagem automática: "Olá, Holanda. Vi seu site e quero entender como
+              funciona seu acompanhamento completo de treino e nutrição."
             </p>
           </div>
         </Reveal>

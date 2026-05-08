@@ -9,6 +9,7 @@ const plans = [
     name: "Básico",
     price: "R$149,90",
     featured: false,
+    summary: "Para quem quer sair do zero com direção clara e rotina organizada.",
     benefits: [
       "Avaliação inicial",
       "Treino mensal personalizado",
@@ -20,6 +21,7 @@ const plans = [
     name: "Premium",
     price: "R$249,90",
     featured: true,
+    summary: "Para quem quer integrar treino e nutrição com mais proximidade e ajuste.",
     benefits: [
       "Treino com atualizações mais frequentes",
       "Estratégia nutricional individual",
@@ -31,6 +33,7 @@ const plans = [
     name: "VIP",
     price: "R$399,90",
     featured: false,
+    summary: "Para quem busca leitura completa do processo e acompanhamento intensivo.",
     benefits: [
       "Consultoria 1:1 de alta proximidade",
       "Treino e nutrição com leitura completa",
@@ -47,9 +50,9 @@ export function PricingSection() {
         <Reveal>
           <SectionHeading
             align="center"
-            description="Escolha o nível de acompanhamento ideal para a sua realidade agora e evolua com uma estrutura que respeita objetivo, rotina e intensidade."
-            eyebrow="Planos e valores"
-            title="Três formatos premium para acelerar sua transformação."
+            description="Todos os planos seguem a mesma lógica: treino, orientação alimentar e ajustes alinhados ao seu objetivo, mudando apenas o nível de proximidade."
+            eyebrow="Níveis de acompanhamento"
+            title="Escolha a intensidade do suporte, não um pacote desconectado."
           />
         </Reveal>
 
@@ -75,9 +78,7 @@ export function PricingSection() {
                 <h3 className="mt-5 font-heading text-[clamp(3.2rem,5vw,4.6rem)] font-bold uppercase leading-none tracking-[-0.04em] text-white">
                   {plan.price}
                 </h3>
-                <p className="mt-4 max-w-sm text-sm leading-7 text-white/65">
-                  Planejamento orientado para gerar consistência e resposta visual real.
-                </p>
+                <p className="mt-4 max-w-sm text-sm leading-7 text-white/65">{plan.summary}</p>
 
                 <div className="mt-8 flex-1 space-y-4">
                   {plan.benefits.map((benefit) => (
@@ -94,7 +95,7 @@ export function PricingSection() {
                     href="#contato"
                     variant={plan.featured ? "primary" : "secondary"}
                   >
-                    Escolher plano
+                    Começar meu plano
                   </Button>
                 </div>
               </motion.article>

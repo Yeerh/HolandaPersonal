@@ -29,16 +29,16 @@ export function HeroSection() {
       <ParticlesBackground />
 
       <div className="section-shell">
-        <div className="absolute inset-x-0 top-14 hidden overflow-hidden lg:block">
-          <p className="font-heading text-center text-[7rem] font-bold uppercase leading-none tracking-[0.04em] text-white/[0.05] xl:text-[8rem]">
-            LEANDRO HOLANDA
+        <div className="absolute inset-x-0 top-14 hidden overflow-hidden xl:block">
+          <p className="font-heading text-center text-[5.6rem] font-bold uppercase leading-none tracking-[0.06em] text-white/[0.05]">
+            HOLANDA PERSONAL NUTRI
           </p>
         </div>
 
         <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
-          <div className="relative flex min-h-[30rem] w-full items-center justify-center sm:min-h-[34rem] md:min-h-[38rem]">
+          <div className="relative flex min-h-[34rem] w-full items-center justify-center sm:min-h-[38rem] md:min-h-[42rem]">
             <Reveal
-              className="pointer-events-none absolute left-1/2 top-[18%] z-10 w-full max-w-[12rem] -translate-x-1/2 -translate-y-1/2 sm:top-[21%] sm:max-w-[14rem] md:top-[24%] md:max-w-[17rem] xl:max-w-[19rem]"
+              className="pointer-events-none absolute left-1/2 top-[16%] z-10 w-full max-w-[12rem] -translate-x-1/2 -translate-y-1/2 sm:top-[19%] sm:max-w-[14rem] md:top-[22%] md:max-w-[17rem] xl:max-w-[19rem]"
               delay={0.05}
             >
               <span
@@ -57,24 +57,21 @@ export function HeroSection() {
               />
             </Reveal>
 
-            <Reveal className="relative z-20 mt-40 max-w-2xl md:mt-51">
-              <h1 className="font-hero text-[clamp(3.2rem,8vw,6.4rem)] font-bold uppercase leading-[0.92] tracking-[-0.05em] text-white">
-                <span className="block">
-                  <span className="relative z-20 inline-block text-[#ff6a00]">
-                    Personal
-                  </span>
+            <Reveal className="relative z-20 mt-44 max-w-4xl md:mt-[15rem]">
+              <h1 className="mt-6 font-hero text-[clamp(2.8rem,6.5vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.05em] text-white">
+                <span className="block">Seu resultado</span>
+                <span className="my-3 inline-flex w-fit max-w-full items-center justify-center rounded-[1.45rem] bg-[#ff6a00] px-5 py-2 text-center text-[clamp(1.75rem,5.4vw,4.3rem)] leading-[0.94] tracking-[-0.04em] text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-8">
+                  não depende só do treino.
                 </span>
-                <span className="my-3 inline-flex w-fit max-w-full items-center justify-center rounded-[1.45rem] bg-[#ff6a00] px-5 py-2 text-center text-[clamp(2rem,7vw,5.6rem)] leading-[0.9] tracking-[-0.04em] text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-8">
-                  Nutricionista
-                </span>
-                <span className="block">Leandro Holanda</span>
+                <span className="block">Nem só da alimentação.</span>
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
-                Transforme seu corpo. Transforme sua mente. Transforme sua vida.
+                Treino e nutrição alinhados aos seus objetivos em um acompanhamento
+                completo, pensado para gerar resultados reais na sua rotina.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Button className="group gap-2" href="#planos">
-                  Comece agora
+                  Começar minha transformação
                   <ArrowRight
                     className="transition duration-300 group-hover:translate-x-1"
                     size={16}

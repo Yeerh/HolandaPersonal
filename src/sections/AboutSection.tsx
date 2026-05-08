@@ -5,9 +5,9 @@ import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
 
 const stats = [
-  { value: "+50", label: "alunos formados", icon: Flame },
+  { value: "+50", label: "alunos acompanhados", icon: Flame },
   { value: "+5", label: "anos de experiência", icon: TimerReset },
-  { value: "100%", label: "foco em resultados", icon: Shield },
+  { value: "100%", label: "atendimento orientado por resultado", icon: Shield },
 ] as const;
 
 export function AboutSection() {
@@ -26,8 +26,8 @@ export function AboutSection() {
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.18),rgba(0,0,0,0.78))]" />
               <div className="absolute inset-x-6 bottom-6 rounded-[1.6rem] border border-[#ff6a00]/20 bg-black/55 p-5 backdrop-blur-xl">
                 <p className="font-heading text-3xl font-bold uppercase leading-none tracking-[-0.03em] text-white">
-                  mais disciplina.
-                  <span className="block text-[#ff6a00]">menos tentativa aleatória.</span>
+                  mais direção.
+                  <span className="block text-[#ff6a00]">menos extremos.</span>
                 </p>
               </div>
             </div>
@@ -36,18 +36,17 @@ export function AboutSection() {
           <div className="space-y-8">
             <Reveal>
               <SectionHeading
-                description="Holanda Personal Nutri nasce da união entre orientação física, leitura nutricional e acompanhamento próximo. O trabalho não se limita ao treino do dia: ele organiza o processo inteiro para que seu corpo responda com consistência."
-                eyebrow="Sobre o Holanda"
-                title="Autoridade aplicada na prática, com método, presença e cobrança de resultado."
+                description="Sou Leandro Holanda, personal trainer e nutricionista, e desenvolvi um acompanhamento completo para quem cansou de seguir treinos e dietas sem direção. Aqui, treino e nutrição são alinhados de forma estratégica à sua rotina, ao seu objetivo e ao que seu corpo realmente precisa para evoluir com constância e resultados reais."
+                eyebrow="Sobre o método"
+                title="Seu resultado começa quando treino e alimentação finalmente trabalham juntos."
               />
             </Reveal>
 
             <Reveal className="surface-card rounded-[2rem] p-7" delay={0.12}>
               <p className="border-l-2 border-[#ff6a00] pl-5 text-base leading-8 text-white/72">
-                Cada aluno segue um planejamento estruturado de acordo com sua rotina,
-                seus objetivos e sua real capacidade de execução. A proposta é otimizar
-                a adesão ao processo, eliminar desperdícios e gerar uma evolução
-                consistente, perceptível tanto na estética quanto na performance.
+                Mais do que acompanhar treinos ou montar dietas, o objetivo é organizar
+                todo o processo para que você tenha direção, constância e resultados
+                reais sem precisar viver de extremos.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -71,7 +70,7 @@ export function AboutSection() {
               </div>
 
               <div className="mt-8">
-                <Button href="#planos">Ver planos</Button>
+                <Button href="#planos">Ver acompanhamento</Button>
               </div>
             </Reveal>
           </div>

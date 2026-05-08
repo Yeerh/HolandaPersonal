@@ -8,25 +8,25 @@ const benefits = [
     icon: Dumbbell,
     title: "Treino personalizado",
     description:
-      "Protocolos construídos para o seu nível, rotina e meta estética ou de performance.",
+      "Treinos alinhados à sua rotina, objetivo e nível atual para gerar evolução sem excesso ou desgaste desnecessário.",
   },
   {
     icon: Salad,
     title: "Nutrição estratégica",
     description:
-      "Ajustes inteligentes de alimentação para acelerar definição, ganho de massa e consistência.",
+      "Uma alimentação simples pensada para acelerar seus resultados sem depender de dietas extremas ou restrições impossíveis.",
   },
   {
     icon: HeartPulse,
     title: "Acompanhamento contínuo",
     description:
-      "Correção de rota, suporte próximo e leitura real da sua evolução sem perder intensidade.",
+      "Ajustes constantes, suporte próximo e direcionamento para manter sua evolução sem perder constância através do WhatsApp e app.",
   },
   {
     icon: Trophy,
-    title: "Resultados comprovados",
+    title: "Resultados reais",
     description:
-      "Método lapidado em dezenas de transformações com foco em entrega prática e mensurável.",
+      "Um método construído para gerar resultados, respeitando sua rotina e o seu processo.",
   },
 ] as const;
 
@@ -36,9 +36,9 @@ export function BenefitsSection() {
       <div className="section-shell">
         <Reveal>
           <SectionHeading
-            description="Treino, nutrição e acompanhamento deixam de competir entre si e passam a operar como um único sistema de evolução."
-            eyebrow="Benefícios"
-            title="Uma estrutura pensada para gerar adesão, intensidade e constância."
+            description="Seu corpo evolui melhor quando treino, alimentação e acompanhamento trabalham na mesma direção e estratégia."
+            eyebrow="O que você recebe"
+            title="Um método pensado para gerar resultado sem fazer você desistir no meio do caminho."
           />
         </Reveal>
 

@@ -57,7 +57,7 @@ export function HeroSection() {
               />
             </Reveal>
 
-            <Reveal className="relative z-20 mt-40 max-w-2xl md:mt-50">
+            <Reveal className="relative z-20 mt-40 max-w-2xl md:mt-51">
               <h1 className="font-hero text-[clamp(3.2rem,8vw,6.4rem)] font-bold uppercase leading-[0.92] tracking-[-0.05em] text-white">
                 <span className="block">
                   <span className="relative z-20 inline-block text-[#ff6a00]">

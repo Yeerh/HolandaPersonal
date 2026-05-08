@@ -64,7 +64,7 @@ export function HeroSection() {
                     Personal
                   </span>
                 </span>
-                <span className="my-3 inline-flex max-w-full rounded-[1.45rem] bg-[#ff6a00] px-4 py-2 text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-6">
+                <span className="my-3 inline-flex w-fit max-w-full items-center justify-center rounded-[1.45rem] bg-[#ff6a00] px-5 py-2 text-center text-[clamp(2rem,7vw,5.6rem)] leading-[0.9] tracking-[-0.04em] text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-8">
                   Nutricionista
                 </span>
                 <span className="block">Leandro Holanda</span>

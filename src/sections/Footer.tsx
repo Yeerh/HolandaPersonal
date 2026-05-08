@@ -1,6 +1,6 @@
 import { Instagram, MessageCircleMore } from "lucide-react";
 import { LogoMark } from "../components/LogoMark";
-import { WHATSAPP_DISPLAY, WHATSAPP_LINK } from "../contact";
+import { INSTAGRAM_HANDLE, INSTAGRAM_LINK, WHATSAPP_DISPLAY, WHATSAPP_LINK } from "../contact";
 
 export function Footer() {
   return (
@@ -11,7 +11,9 @@ export function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
           <a
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-xs font-bold uppercase tracking-[0.22em] text-white/75 transition hover:border-[#ff6a00]/30 hover:text-[#ff6a00]"
-            href="#contato"
+            href={INSTAGRAM_LINK}
+            rel="noreferrer"
+            target="_blank"
           >
             <Instagram size={16} />
             Instagram
@@ -32,6 +34,7 @@ export function Footer() {
             © 2026 Holanda Personal Nutri. Todos os direitos reservados.
           </p>
           <p className="mt-2 text-sm text-white/48">{WHATSAPP_DISPLAY}</p>
+          <p className="mt-1 text-sm text-white/48">{INSTAGRAM_HANDLE}</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,76 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="holanda-orange" x1="92" y1="76" x2="430" y2="422" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8A1F" />
+      <stop offset="1" stop-color="#FF5A00" />
+    </linearGradient>
+    <filter id="holanda-shadow" x="18" y="12" width="476" height="478" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.24" />
+    </filter>
+  </defs>
+
+  <g filter="url(#holanda-shadow)">
+    <circle cx="256" cy="256" r="162" fill="white" />
+
+    <path
+      d="M108 337C78 294 66 239 76 184C91 103 149 41 231 26C311 11 393 44 441 116"
+      stroke="url(#holanda-orange)"
+      stroke-width="34"
+      stroke-linecap="round"
+    />
+    <path
+      d="M100 340C72 299 60 246 70 192C85 110 145 46 228 30C309 15 389 46 438 114"
+      stroke="white"
+      stroke-width="14"
+      stroke-linecap="round"
+    />
+
+    <path
+      d="M357 70C418 96 467 147 487 212C506 273 495 344 453 396"
+      stroke="white"
+      stroke-width="18"
+      stroke-linecap="round"
+    />
+    <path
+      d="M346 83C402 109 445 157 462 216C477 266 469 319 437 365"
+      stroke="black"
+      stroke-width="24"
+      stroke-linecap="round"
+    />
+
+    <path
+      d="M75 312C49 265 42 210 55 159C72 95 112 46 171 21"
+      stroke="black"
+      stroke-width="28"
+      stroke-linecap="round"
+    />
+    <path
+      d="M180 430C249 454 328 445 390 403C444 367 478 309 485 245"
+      stroke="url(#holanda-orange)"
+      stroke-width="34"
+      stroke-linecap="round"
+    />
+    <path
+      d="M183 422C247 443 320 434 378 395C430 359 462 307 470 248"
+      stroke="white"
+      stroke-width="14"
+      stroke-linecap="round"
+    />
+    <path
+      d="M170 423C218 438 271 438 317 423"
+      stroke="black"
+      stroke-width="18"
+      stroke-linecap="round"
+    />
+
+    <g transform="translate(256 256) rotate(8) skewX(-8) translate(-256 -256)">
+      <rect x="182" y="118" width="66" height="276" rx="10" fill="black" />
+      <rect x="284" y="118" width="66" height="276" rx="10" fill="black" />
+      <rect x="230" y="214" width="78" height="74" rx="10" fill="black" />
+      <rect x="164" y="118" width="102" height="26" rx="10" fill="black" />
+      <rect x="266" y="118" width="102" height="26" rx="10" fill="black" />
+      <rect x="164" y="368" width="102" height="26" rx="10" fill="black" />
+      <rect x="266" y="368" width="102" height="26" rx="10" fill="black" />
+    </g>
+  </g>
+</svg>

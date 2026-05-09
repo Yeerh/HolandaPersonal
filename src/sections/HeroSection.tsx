@@ -50,7 +50,7 @@ export function HeroSection() {
                 className="absolute inset-x-8 bottom-2 h-10 rounded-full bg-[#ff6a00]/30 blur-[42px]"
               />
               <img
-                alt="Leandro Holanda"
+                alt="Leonardo Holanda"
                 className="relative z-10 h-auto w-full drop-shadow-[0_25px_70px_rgba(0,0,0,0.55)]"
                 loading="eager"
                 src={heroPortrait}
@@ -58,12 +58,16 @@ export function HeroSection() {
             </Reveal>
 
             <Reveal className="relative z-20 mt-44 max-w-4xl md:mt-[15rem]">
-              <h1 className="mt-6 font-hero text-[clamp(2.8rem,6.5vw,5.5rem)] font-bold leading-[0.92] tracking-[-0.05em] text-white">
-                <span className="block">Seu resultado</span>
-                <span className="my-3 inline-flex w-fit max-w-full items-center justify-center rounded-[1.45rem] bg-[#ff6a00] px-5 py-2 text-center text-[clamp(1.75rem,5.4vw,4.3rem)] leading-[0.94] tracking-[-0.04em] text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-8">
-                  não depende só do treino.
+              <h1 className="mt-6 font-hero text-[clamp(2.8rem,6.5vw,5.5rem)] font-bold uppercase leading-[0.92] tracking-[-0.05em] text-white">
+                <span className="block">
+                  <span className="relative z-20 inline-block text-[#ff6a00]">
+                    Personal
+                  </span>
                 </span>
-                <span className="block">Nem só da alimentação.</span>
+                <span className="my-3 inline-flex w-fit max-w-full items-center justify-center rounded-[1.45rem] bg-[#ff6a00] px-5 py-2 text-center text-[clamp(1.75rem,5.4vw,4.3rem)] leading-[0.94] tracking-[-0.04em] text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-8">
+                  Nutricionista
+                </span>
+                <span className="block">Leandro Holanda</span>
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
                 Treino e nutrição alinhados aos seus objetivos em um acompanhamento

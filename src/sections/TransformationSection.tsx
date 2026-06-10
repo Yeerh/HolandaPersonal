@@ -2,58 +2,41 @@ import { motion } from "framer-motion";
 import { Camera, Target, Timer, Trophy } from "lucide-react";
 import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
+import antesDuda from "../assets/antesduda.png";
+import antesHolanda from "../assets/antesholanda.png";
+import depoisDuda from "../assets/depoisduda.png";
+import depoisHolanda from "../assets/depoisholanda.png";
 
 const transformations = [
   {
-    name: "Projeto Cutting",
-    result: "-12 kg em 4 meses",
-    resultClassName: "max-w-[9ch]",
-    time: "16 semanas",
+    name: "Maria Eduarda",
+    result: "65kg para 60kg",
+    resultClassName: "max-w-[11ch]",
+    time: "23% para 21%",
     outcome:
-      "Mais do que perder peso, o foco foi construir uma rotina que deixou de ser tentativa e virou constância.",
-    progress: "Perda de gordura com rotina sustentável",
-    beforeMetric: "97 kg",
-    afterMetric: "85 kg",
-    beforeImage:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80",
-    beforeAlt: "Fase inicial de treino de cutting",
-    afterAlt: "Resultado final de cutting com físico mais definido",
+      "Evolucao com reducao de peso e melhora no percentual de gordura, mantendo consistencia no processo.",
+    progress: "Reducao de peso e gordura corporal",
+    beforeMetric: "65 kg",
+    afterMetric: "60 kg",
+    beforeImage: antesDuda,
+    afterImage: depoisDuda,
+    beforeAlt: "Inicio da evolucao da Maria Eduarda",
+    afterAlt: "Resultado da evolucao da Maria Eduarda",
   },
   {
-    name: "Projeto Massa Magra",
-    result: "+7 kg de massa magra",
-    resultClassName: "max-w-[10ch]",
-    time: "6 meses",
+    name: "Holanda",
+    result: "81kg para 73kg",
+    resultClassName: "max-w-[11ch]",
+    time: "15% para 10%",
     outcome:
-      "Mais do que ganhar massa, o processo trouxe mais confiança, presença física e consistência na alimentação.",
-    progress: "Hipertrofia com alimentação alinhada",
-    beforeMetric: "68 kg",
-    afterMetric: "75 kg",
-    beforeImage:
-      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=900&q=80",
-    beforeAlt: "Fase inicial de ganho de massa",
-    afterAlt: "Resultado final de ganho de massa com mais volume muscular",
-  },
-  {
-    name: "Projeto Performance",
-    result: "Definição e condicionamento",
-    resultClassName: "max-w-[11ch] text-[clamp(2rem,4vw,3.1rem)]",
-    time: "12 semanas",
-    outcome:
-      "Mais do que definir o corpo, a meta foi transformar uma rotina irregular em disciplina que dá para sustentar.",
-    progress: "Condicionamento com rotina organizada",
-    beforeMetric: "Rotina irregular",
-    afterMetric: "Rotina estruturada",
-    beforeImage:
-      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80",
-    beforeAlt: "Fase inicial de condicionamento",
-    afterAlt: "Resultado final com melhor condicionamento físico",
+      "Transformacao com queda expressiva no peso e definicao corporal mais evidente ao longo do acompanhamento.",
+    progress: "Reducao de peso com definicao",
+    beforeMetric: "81 kg",
+    afterMetric: "73 kg",
+    beforeImage: antesHolanda,
+    afterImage: depoisHolanda,
+    beforeAlt: "Inicio da evolucao do Holanda",
+    afterAlt: "Resultado da evolucao do Holanda",
   },
 ] as const;
 
@@ -64,13 +47,13 @@ export function TransformationSection() {
         <Reveal>
           <SectionHeading
             align="center"
-            description="Os resultados abaixo mostram o que acontece quando treino, alimentação e acompanhamento finalmente trabalham na mesma direção."
+            description="Os resultados abaixo mostram o que acontece quando treino, alimentacao e acompanhamento finalmente trabalham na mesma direcao."
             eyebrow="Resultados reais"
             title="Antes e depois com resultados reais de quem parou de tentar sozinho."
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-6 xl:grid-cols-3">
+        <div className="mt-12 grid gap-6 xl:grid-cols-2">
           {transformations.map((item, index) => (
             <Reveal delay={0.1 * index} key={item.name}>
               <motion.article
@@ -84,7 +67,7 @@ export function TransformationSection() {
                       {item.name}
                     </p>
                     <h3
-                      className={`mt-4 font-heading text-[clamp(2.1rem,4vw,3.1rem)] font-bold uppercase leading-[0.92] tracking-[-0.05em] text-white text-balance ${item.resultClassName}`}
+                      className={`mt-4 min-h-[5.9rem] font-heading text-[clamp(2.1rem,4vw,3.1rem)] font-bold uppercase leading-[0.92] tracking-[-0.05em] text-white text-balance md:min-h-[6.2rem] ${item.resultClassName}`}
                     >
                       {item.result}
                     </h3>
@@ -94,16 +77,16 @@ export function TransformationSection() {
                   </div>
                 </div>
 
-                <p className="mt-6 max-w-[36ch] text-base leading-8 text-white/68">
+                <p className="mt-6 min-h-[7rem] max-w-[36ch] text-base leading-8 text-white/68 md:min-h-[7.5rem]">
                   {item.outcome}
                 </p>
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
                   <div className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-black/30">
-                    <div className="relative aspect-[4/5]">
+                    <div className="relative aspect-[9/16] bg-[#151515]">
                       <img
                         alt={item.beforeAlt}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain object-top"
                         loading="lazy"
                         src={item.beforeImage}
                       />
@@ -120,10 +103,10 @@ export function TransformationSection() {
                   </div>
 
                   <div className="overflow-hidden rounded-[1.6rem] border border-[#ff6a00]/18 bg-black/30">
-                    <div className="relative aspect-[4/5]">
+                    <div className="relative aspect-[9/16] bg-[#151515]">
                       <img
                         alt={item.afterAlt}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain object-top"
                         loading="lazy"
                         src={item.afterImage}
                       />

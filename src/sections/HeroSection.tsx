@@ -1,92 +1,113 @@
-import { ArrowRight } from "lucide-react";
-import heroPortrait from "../assets/hero-holanda.png";
-import { Button } from "../components/Button";
-import { ParticlesBackground } from "../components/ParticlesBackground";
+import heroBackground from "../assets/holanda-section.png";
+import heroBackgroundMobile from "../assets/holanda-section-mobile.png";
+import { WHATSAPP_LINK } from "../contact";
 import { Reveal } from "../components/Reveal";
 
 export function HeroSection() {
   return (
     <section
-      className="relative isolate overflow-hidden pb-16 pt-32 md:pb-24 md:pt-36"
+      className="relative isolate overflow-hidden bg-white pb-10 pt-[4.75rem] text-[#111111] md:pb-16 md:pt-[5.25rem] lg:pb-8"
       id="inicio"
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-cover bg-center opacity-16"
+        className="absolute inset-0 hidden lg:block bg-no-repeat"
         style={{
-          backgroundImage:
-            "linear-gradient(180deg, rgba(3,3,3,0.55), rgba(3,3,3,0.92)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=80')",
+          backgroundImage: `url(${heroBackground})`,
+          backgroundPosition: "right 1.5rem bottom 0.15rem",
+          backgroundSize: "auto calc(100% - 0.35rem)",
+        }}
+      />
+
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,106,0,0.08),transparent_24%),linear-gradient(90deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.97)_27%,rgba(255,255,255,0.86)_39%,rgba(255,255,255,0.48)_51%,rgba(255,255,255,0.12)_64%,rgba(255,255,255,0)_78%)]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-no-repeat lg:hidden"
+        style={{
+          backgroundImage: `url(${heroBackgroundMobile})`,
+          backgroundPosition: "center top",
+          backgroundSize: "cover",
         }}
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(circle_at_50%_16%,rgba(255,106,0,0.2),transparent_24%),radial-gradient(circle_at_50%_48%,rgba(255,106,0,0.16),transparent_28%),linear-gradient(180deg,rgba(0,0,0,0.08),rgba(0,0,0,0.88))]"
+        className="absolute inset-0 lg:hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.14)_0%,rgba(255,255,255,0.12)_28%,rgba(255,255,255,0.52)_58%,rgba(255,255,255,0.82)_78%,rgba(255,255,255,0.96)_100%)]"
       />
       <div
         aria-hidden="true"
-        className="absolute left-1/2 top-44 h-72 w-72 -translate-x-1/2 rounded-full bg-[#ff6a00]/18 blur-[140px] md:h-[24rem] md:w-[24rem]"
+        className="absolute left-[7%] top-24 h-36 w-36 rounded-full bg-[#ff6a00]/8 blur-[96px]"
       />
-      <ParticlesBackground />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-white/72 to-transparent"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white via-white/22 to-transparent"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-0 h-8 bg-[linear-gradient(180deg,rgba(255,255,255,0),rgba(5,5,5,0.62))]"
+      />
 
-      <div className="section-shell">
-        <div className="absolute inset-x-0 top-14 hidden overflow-hidden xl:block">
-          <p className="font-heading text-center text-[5.6rem] font-bold uppercase leading-none tracking-[0.06em] text-white/[0.05]">
-            HOLANDA PERSONAL NUTRI
-          </p>
-        </div>
-
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
-          <div className="relative flex min-h-[34rem] w-full items-center justify-center sm:min-h-[38rem] md:min-h-[42rem]">
-            <Reveal
-              className="pointer-events-none absolute left-1/2 top-[16%] z-10 w-full max-w-[12rem] -translate-x-1/2 -translate-y-1/2 sm:top-[19%] sm:max-w-[14rem] md:top-[22%] md:max-w-[17rem] xl:max-w-[19rem]"
-              delay={0.05}
-            >
-              <span
-                aria-hidden="true"
-                className="absolute inset-x-4 top-6 h-[12%] rounded-full bg-[radial-gradient(circle_at_50%_28%,rgba(255,255,255,0.12),transparent_48%),linear-gradient(180deg,rgba(255,106,0,0.16),rgba(255,106,0,0))] blur-[8px]"
-              />
-              <span
-                aria-hidden="true"
-                className="absolute inset-x-8 bottom-2 h-10 rounded-full bg-[#ff6a00]/30 blur-[42px]"
-              />
-              <img
-                alt="Leonardo Holanda"
-                className="relative z-10 h-auto w-full drop-shadow-[0_25px_70px_rgba(0,0,0,0.55)]"
-                loading="eager"
-                src={heroPortrait}
-              />
-            </Reveal>
-
-            <Reveal className="relative z-20 mt-44 max-w-4xl md:mt-[15rem]">
-              <h1 className="mt-6 font-hero text-[clamp(2.8rem,6.5vw,5.5rem)] font-bold uppercase leading-[0.92] tracking-[-0.05em] text-white">
-                <span className="block">
-                  <span className="relative z-20 inline-block text-[#ff6a00]">
-                    Personal
-                  </span>
-                </span>
-                <span className="my-3 inline-flex w-fit max-w-full items-center justify-center rounded-[1.45rem] bg-[#ff6a00] px-5 py-2 text-center text-[clamp(1.75rem,5.4vw,4.3rem)] leading-[0.94] tracking-[-0.04em] text-white shadow-[0_0_40px_rgba(255,106,0,0.28)] sm:px-8">
-                  Nutricionista
-                </span>
-                <span className="block">Leandro Holanda</span>
-              </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/72 md:text-xl">
-                Treino e nutrição alinhados aos seus objetivos em um acompanhamento
-                completo, pensado para gerar resultados reais na sua rotina.
+      <div className="section-shell relative">
+        <div className="grid items-center gap-4 lg:grid-cols-[minmax(0,39rem)_minmax(0,1fr)] lg:gap-2 xl:gap-4">
+          <Reveal className="relative z-10 max-w-[39rem] pt-[13.5rem] pb-2 md:py-8 lg:py-10">
+            <div className="hidden items-center gap-3 rounded-full border border-[#ff6a00]/14 bg-white/88 px-4 py-2 shadow-[0_12px_28px_rgba(255,106,0,0.08)] backdrop-blur-sm lg:inline-flex">
+              <span aria-hidden="true" className="h-2.5 w-2.5 rounded-full bg-[#ff6a00]" />
+              <p className="text-[0.94rem] font-black uppercase tracking-[0.24em] text-[#ff6a00] md:text-[1.02rem]">
+                Leandro Holanda
               </p>
-              <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Button className="group gap-2" href="#planos">
-                  Começar minha transformação
-                  <ArrowRight
-                    className="transition duration-300 group-hover:translate-x-1"
-                    size={16}
-                  />
-                </Button>
-                <Button href="#sobre" variant="secondary">
-                  Conheça o método
-                </Button>
-              </div>
-            </Reveal>
-          </div>
+            </div>
+
+            <div className="text-center lg:hidden">
+              <p className="text-[0.82rem] font-black uppercase tracking-[0.28em] text-[#ff6a00]">
+                LEANDRO HOLANDA
+              </p>
+              <h1 className="mx-auto mt-3 max-w-[12ch] font-hero text-[clamp(2.3rem,9.8vw,3.15rem)] font-bold leading-[0.94] tracking-[-0.05em] text-[#111111]">
+                Personal e Nutri<span className="text-[#ff6a00]">.</span>
+              </h1>
+              <p className="mx-auto mt-3 max-w-[20rem] text-[0.95rem] leading-6 text-[#111111]/66">
+                Treinos e acompanhamento para voce evoluir com estrategia.
+              </p>
+            </div>
+
+            <h1 className="mt-5 hidden font-hero text-[clamp(3rem,6vw,5.45rem)] font-bold uppercase leading-[0.88] tracking-[-0.07em] text-[#111111] lg:block">
+              <span className="block">PERSONAL</span>
+              <span className="mt-1 block">
+                NUTRICIONISTA<span className="text-[#ff6a00]">.</span>
+              </span>
+            </h1>
+
+            <p className="mt-6 hidden max-w-[33rem] text-base leading-8 text-[#111111]/68 sm:text-lg md:text-[1.18rem] md:leading-[2.05rem] lg:block">
+              Treinamento personalizado para transformar seu corpo, sua mente e sua
+              rotina com acompanhamento pensado para gerar resultado de verdade.
+            </p>
+
+            <div className="mt-5 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-5 lg:justify-start">
+              <a
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-[1.2rem] bg-[#ff6a00] px-6 py-3 text-[0.8rem] font-extrabold uppercase tracking-[0.12em] text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#f15f00] sm:min-h-14 sm:w-auto sm:rounded-2xl sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.1em]"
+                href={WHATSAPP_LINK}
+                rel="noreferrer"
+                target="_blank"
+              >
+                COMECE AGORA
+              </a>
+
+              <a
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-[1.2rem] border border-[#111111]/12 bg-white/84 px-6 py-3 text-[0.8rem] font-extrabold uppercase tracking-[0.12em] text-[#111111] transition duration-300 hover:-translate-y-0.5 hover:border-[#ff6a00]/40 hover:text-[#ff6a00] sm:min-h-14 sm:w-auto sm:rounded-2xl sm:px-8 sm:py-4 sm:text-sm sm:tracking-[0.1em]"
+                href="#planos"
+              >
+                VER PLANOS
+              </a>
+            </div>
+
+          </Reveal>
+
+          <div aria-hidden="true" className="hidden lg:block" />
         </div>
       </div>
     </section>
